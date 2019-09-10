@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>SlideSHow</title>
+
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+
+
+    <script>
+      var pictures = ["./img/img1.jpg", "./img/img2.jpg", "./img/img3.jpg", "./img/img4.jpg", "./img/img5.jpg"];
+      function load () {
+        //document.getElementById('image_canvas').getElementsByTagName('img').src=pictures[0];
+        changePic(0);
+      }
+
+      function changePic(n) {
+        document.getElementById('image_canvas').getElementsByTagName('img')[0].src=pictures[n % pictures.length];
+        setTimeout(function(){changePic(n+1);},2000);
+
+        }
+    </script>
+
+  </head>
+
+  <div id="like_button_container"></div>
+
+  <body onload="load();">
+    <h1 id="myHeader">
+      My pictures
+    </h1>
+
+    <!-- Load our React component. -->
+    <script src="like_button.js"></script>
+
+    <div id="image_canvas" style="width:750px; height:497px; margin:0 auto">
+      <img style="height:100%; width: 100%" src="./img/img1.jpg"/>
+    </div>
+  </body>
+
+</html>
