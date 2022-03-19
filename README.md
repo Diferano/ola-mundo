@@ -9,3 +9,11 @@ You have many resource:
 - with multiple lines
 
 
+you can also create a table
+
+| Symbol | Meaning|
+|--------|---------------------------|
+| #      | Text using <h1>           |
+| - xxx  | list item <ul>            |
+| 1. xxx | list item <ol>|
+| - [ ] xxx | task list|
