@@ -11,9 +11,12 @@ You have many resource:
 
 you can also create a table
 
-| Symbol | Meaning|
+| Symbol | Meaning                   |
 |--------|---------------------------|
 | #      | Text using <h1>           |
 | - xxx  | list item <ul>            |
 | 1. xxx | list item <ol>|
 | - [ ] xxx | task list|
+
+
+[^1]: This is the footnote.
