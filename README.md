@@ -22,5 +22,10 @@ you can also create a table
 | - [ ] xxx | task list|
 ! X^2^ | Superscript |
 
+- [ ] I like coding
+- [ ] I love StarWars
+- [ ] What is StarWars?
+
+
 
 [^1]: This is the footnote.
